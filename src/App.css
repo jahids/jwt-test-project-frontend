@@ -1,0 +1,51 @@
+body{
+
+      background-color:#ebebeb;
+  }
+  .searchbox{
+      width:350px;
+
+      margin:100px auto;
+  }
+  input{
+      padding:10px 15px 10px 50px;
+      font-size:36px;
+      color:#1f5350;
+      background-color:#7accc8;
+  }
+ 
+  
+ 
+  /* .suggestions li{
+      overflow:hidden;  
+      height:0;
+  } */
+ 
+  /* .custom ul {
+      overflow:hidden;  
+       height:0;
+  } */
+ 
+/* 
+  input:focus + .suggestions li{
+      height:50%;
+      overflow: visible;
+  } */
+
+  /* input:focus + .custom ul {
+      height:50%;
+      overflow: visible;
+  } */
+
+  /* my test coe */
+
+  /* input:focus + .custom
+{
+     display:none;
+}
+.searchbox
+{
+     display:none;
+} */
+  
+ 
