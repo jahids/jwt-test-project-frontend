@@ -1,46 +1,20 @@
-import axios from "axios";
-import { useRef } from "react";
-
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import FirstPage from "./views/FirstPage";
+import Login from "./views/Login";
 
 function App() {
-
-  const inputname = useRef();
-  const inputpass = useRef();
-
-  const handleDatapass = (e) => {
-
-    
-
-    const inputValue = inputname.current.value;
-    const passValue = inputpass.current.value;
-
-    axios.post(`http://localhost:4500/api/login`, {
-      inputValue, passValue
-    })
-      .then(res => console.log(res))
-
-  }
-
-
-
-
-
   return (
-
-    <div>
-      <input ref={inputname} type="text" placeholder="plese enter your name" />
-      <input ref={inputpass} type="number" placeholder="plese enter your pass" />
-      <button onClick={handleDatapass} >click</button>
-
-    </div>
-
-
-
-
-
-
+    <BrowserRouter>
+      <Routes>
+          <Route path="/" element={<Login/>} />
+          <Route path="/home" element={<FirstPage/>} />
+      </Routes>
+    </BrowserRouter>
   )
-
 }
 
 
